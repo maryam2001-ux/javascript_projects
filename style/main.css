@@ -1,0 +1,238 @@
+/* ?global styles */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*
+::after ,
+::before {
+box-sizing: border-box;
+}
+
+
+html {
+  scroll-padding-top:55px ;
+}
+
+body {
+  text-transform: capitalize;
+  background: linear-gradient(0deg,
+  #d0e0ff 15%,      /* Soft starlight */
+  #aab6ff 30%,      /* Nebula mist */
+  #8a6df4 45%,     /* Interstellar purple */
+  #3a2a6d 85%     /* Galactic twilight */
+);
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+}
+
+:root {
+
+  --color1:#d0e0ff;
+  --color3:#8a6df4;
+  --color4:#3B1E54;
+  --color5:#8F87F1;
+}
+
+
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+::selection {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 600;
+  color: var(--main-color);
+  font-family: "Electrolize", sans-serif;
+}
+
+p , a {
+  font-family: "Electrolize", sans-serif;
+
+}
+
+span , a {
+  display: inline-block;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+/* *=============  starting the nav side ================ */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  background-color: var(--color3);
+  transition: all 0.3s;
+  z-index: 1000;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar.show {
+  left: 0;
+}
+
+.sidebar-header {
+  padding: 20px;
+}
+
+.sidebar .nav-link {
+  padding: 10px 20px;
+  color: var(--color4);
+  font-size: 1.3rem;
+  transition: color 0.3s;
+
+}
+
+.sidebar .nav-link:hover {
+  color: var(--color1);
+
+}
+
+
+.sidebar .nav-link.active {
+  background-color: #D4BEE4;
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1100;
+  background: var(--color1);
+  border: 1px solid #dee2e6;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.white {
+  color: #fff;
+  text-shadow: 2px 2px 3px #000;
+}
+
+
+
+/* *qoute  */
+
+#new-quote {
+  font-size: 1.3rem;
+  color: var(--color1);
+  background-color: var(--color4);
+  text-align: center;
+  margin: 20px 0;
+}
+
+
+.quote-box {
+  background-color: var(--color1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.git-link span {
+  font-size: 1.2rem;
+  color: var(--color4);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--color1);
+  transition: all 0.3s;
+  border: 2.5px solid var(--color4);
+}
+
+form .form-control:focus {
+  box-shadow: none;
+  border: 2px solid var(--color4);
+}
+
+
+
+.signForm {
+  width: 404px;
+  height: 874px;
+}
+
+
+.sign-input {
+  position: absolute;
+  top: -14px;
+  left: 15px;
+  background: #fff;
+  color: #720884;
+}
+
+
+
+.border-input {
+  border:1px solid rgba(114, 8, 132, 0.4) !important ;
+
+
+}
+
+
+.btn.btn-purple {
+  background-color: #c79cce;
+  color:#F5F5F5 ;
+  padding-inline: 60px;
+  border-radius: 24px;
+  font-family:Irish Grover;
+}
+
+.ps-6 {
+padding-inline-start: 96px;
+font-size: 0.9rem;
+
+}
+
+.card-text a {
+  text-decoration: none;
+  color:rgba(114, 8, 132, 0.4) ;
+}
+
+.signForm h6 {
+  color: #720884;
+  text-decoration: underline;
+} 
+
+.signForm h3 {
+  color:rgba(114, 8, 132, 0.4) ;
+} 
+
+
+.signForm img {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

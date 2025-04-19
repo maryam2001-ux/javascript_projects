@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-live-project</title>
+
+
+  <!-- ! links for external pages    -->
+
+  <link rel="stylesheet" href="./style/main.css">
+  <link rel="stylesheet" href="./style/all.min.css">
+  <link rel="stylesheet" href="./style/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+  <!-- ! fonts  --> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+
+
+    <!-- TODO header  -->
+
+    <header id="header" class="header">
+
+      <div class="sidebar">
+        <div class="sidebar-header mt-5">
+            <h5 class="white">JS Project Menu</h5>
+        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./qoute.html">qoute</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./crud.html">crud</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./bookmark.html">bookmark</a>
+            </li>
+
+            <li class="nav-item" style="background-color: #D4BEE4;">
+              <a class="nav-link" href="./SignUp.html">SignForm</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">project</a>
+            </li>
+          
+        </ul>
+    </div>
+
+    <div class="menu-toggle">
+      <i class="fas fa-bars" style="font-size: 1.5rem;"></i>
+    </div>
+
+    </header>
+  
+
+
+
+  <!-- TODO main  -->
+
+  <main class="page-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center d-flex flex-column justify-content-center align-items-center min-vh-100 py-4">
+          <h1 class="animate__heartBeat white mb-4 mb-sm-5">Sign Up & Login</h1>   
+          
+          <div class="row justify-content-center my-3 my-lg-5 w-75 " >
+            <div class="col-lg-6 col-md-8 col-12 mb-4 mb-lg-0 px-3 px-sm-4" id="loginForm">
+              <div class="card signForm h-100">
+                <div class="card-body p-3 p-sm-4">
+
+                  <div class="sign-img d-flex align-items-center justify-content-center mb-4 ">
+                    <img src="./imgs/Group.png" style="width: 7rem; " alt="sign in ">
+
+                  </div>
+
+
+                  <h3 class="card-title" style="font-family:Irish Grover ">Sign in</h3>
+
+                  <div class="mb-2 mt-5 position-relative">
+                    <label for="EmailSignInForm" class="form-label sign-input" style="font-family:Irish Grover ">Email </label>
+                    <input type="email" class="form-control border-input" id="EmailSignInForm" placeholder="enter your mail" style="font-family:Irish Grover  " >
+                  </div>
+
+                  <div class="mb-2 mt-4 position-relative">
+                    <label for="PassSignInForm" class="form-label sign-input" style="font-family:Irish Grover ">password </label>
+                    <input type="password" class="form-control border-input" id="PassSignInForm" placeholder="enter your password" style="font-family:Irish Grover  " >
+                  </div>
+
+
+
+                  <p class="card-text ps-6 text-muted pt-2 pb-3" style="font-family:Irish Grover ">forget your password ? <a href="#" style="font-family:Irish Grover ">click here</a>.</p>
+                  <button type="submit" class="btn btn-purple mt-2 mb-2" id="SignInButton">Sign In</button>
+
+                  <h6 class="mt-4 " style="font-family:Irish Grover "> OR </h6>
+
+                  <p class="card-text mt-4 mb-5 text-muted" style="font-family:Irish Grover ">Dont have Account ? <a href="#" onclick="showSignup()" style="font-family:Irish Grover ">Sign Up</a>.</p>
+
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-6 col-md-8 col-12 px-3 px-sm-4" id="signupForm" style="display: none;">
+              <div class="card signForm h-100">
+                <div class="card-body p-3 p-sm-4">
+
+
+                  <h3 class="card-title mt-4" style="font-family:Irish Grover ">Sign up</h3>
+
+                  <div class="mb-2 mt-5 position-relative">
+                    <label for="NameForm" class="form-label sign-input " style="font-family:Irish Grover ">Name </label>
+                    <input type="text" class="form-control border-input" id="NameForm" placeholder="enter your name" style="font-family:Irish Grover  " >
+                  </div>
+
+                  <div class="mb-2 mt-4 position-relative">
+                    <label for="EmailSignUpForm" class="form-label sign-input" style="font-family:Irish Grover ">Email </label>
+                    <input type="email" class="form-control border-input" id="EmailSignUpForm" placeholder="enter your mail" style="font-family:Irish Grover ">
+                  </div>
+
+                  <div class="mb-2 mt-4 position-relative">
+                    <label for="PhoneForm" class="form-label sign-input" style="font-family:Irish Grover ">Phone </label>
+                    <input type="number" class="form-control border-input" id="PhoneForm" placeholder="enter your phone" style="font-family:Irish Grover  ">
+                  </div>
+
+                  <div class="mb-2 mt-4 position-relative">
+                    <label for="PassSignUpForm" class="form-label sign-input" style="font-family:Irish Grover ">password </label>
+                    <input type="password" class="form-control border-input" id="PassSignUpForm" placeholder="enter your password" style="font-family:Irish Grover  " >
+                  </div>
+
+                  <div class="mb-2 mt-4 position-relative">
+                    <label for="ConfirmPassForm" class="form-label sign-input" style="font-family:Irish Grover ">Confirm password </label>
+                    <input type="password" class="form-control border-input" id="ConfirmPassForm" placeholder="confirm your password" style="font-family:Irish Grover  ">
+                  </div>
+
+                  <button type="submit" class="btn btn-purple mt-5 mb-4" id="SignUpButton">Sign Up</button>
+
+                  <p class="card-text mt-4 mb-5 text-muted" style="font-family:Irish Grover ">Aleardy have Account ? <a href="#" onclick="showLogin()" style="font-family:Irish Grover ">Sign In</a>.</p>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+  
+          <div class="git-link d-flex flex-column flex-sm-row justify-content-center align-items-center mt-3 mt-sm-4">
+          
+            <div class="code ">
+              <span class="fs-5 fs-sm-4 mb-2 mb-sm-0">Explore the code at GitHub <i class="fab fa-github"></i></span>
+              <button class="btn btn-light ms-sm-3">
+                <a href="https://github.com/maryam2001-ux/javascript_live_Project" target="_blank" style="text-decoration: none; color: #3a2a6d;">View Code</a>
+              </button>
+            </div>
+
+            
+          </div>
+
+  
+          <div class="git-link d-flex flex-column flex-sm-row justify-content-center align-items-center mt-3 mt-sm-4">
+          
+            <div class="design">
+              <span class="fs-5 fs-sm-4 mb-2 mb-sm-0">Explore the design at behance <i class="fab fa-behance"></i></span>
+              <button class="btn btn-light ms-sm-3">
+                <a href="https://www.behance.net/gallery/223755213/sign-up-and-sign-in-page" target="_blank" style="text-decoration: none; color: #3a2a6d;">View Design</a>
+              </button>
+            </div>
+
+
+            
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <!-- ! scripts  --> 
+
+  <script src="./scripts/bootstrap.bundle.min.js"></script>
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/SignUp.js"></script>
+
+</body>
+</html>

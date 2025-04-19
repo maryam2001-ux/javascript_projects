@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-live-project</title>
+
+    <!-- ! links for external pages    -->
+
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/all.min.css" />
+    <link rel="stylesheet" href="./style/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- ! fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- TODO header  -->
+
+    <header id="header" class="header">
+      <div class="sidebar">
+        <div class="sidebar-header mt-5">
+          <h5 class="white">JS Project Menu</h5>
+        </div>
+        <ul class="nav flex-column">
+          <li class="nav-item" aria-current="page">
+            <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+          </li>
+
+          <li class="nav-item" >
+            <a class="nav-link" href="./qoute.html">qoute</a>
+          </li>
+
+          <li class="nav-item" style="background-color: #d4bee4">
+            <a class="nav-link" href="./crud.html">crud</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./bookmark.html">bookmark</a>
+          </li>
+
+          <li class="nav-item" >
+            <a class="nav-link" href="./SignUp.html">SignForm</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">project</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu-toggle">
+        <i class="fas fa-bars" style="font-size: 1.5rem"></i>
+      </div>
+    </header>
+
+    <!-- TODO main  -->
+
+    <main class="page-content">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12  d-flex flex-column align-items-center h-auto"
+          >
+
+
+          <h1 class="mt-1 white p-5 animate__heartBeat">
+            product manager project
+          </h1>
+
+
+            <form class="form w-75">
+            
+
+              <div class="mb-3 d-flex justify-content-between align-items-center">
+              <input class="form-control me-2 " type="search" placeholder="Search for your product" aria-label="Search"  id="searchInput"/>
+              <button class="btn btn-outline-light" type="search"  onclick="searchProduct()" >Search</button>
+              </div>
+
+              <div class="mb-3 ">
+                <label for="NameProduct" class="form-label text-light">name</label>
+                <input type="text" class="form-control" id="NameProduct" placeholder="name">
+              </div>
+
+              <div class="mb-3">
+                <label for="CategoryProduct" class="form-label text-light ">Category</label>
+                <input type="text" class="form-control" id="CategoryProduct" placeholder="Category of Product">
+              </div>
+
+              <div class="mb-3">
+                <label for="PriceProduct" class="form-label text-light">Price </label>
+                <input type="number" class="form-control" id="PriceProduct" placeholder="Price of Product">
+              </div>
+
+
+              <div class="mb-3">
+                <label for="DescriptionProduct" class="form-label text-light">Description of Product</label>
+                <textarea class="form-control" id="DescriptionProduct" rows="3"></textarea>
+              </div>
+
+
+              <div class="mb-3">
+                <label for="ImageProduct" class="form-label text-light">upload image for your product</label>
+                <input class="form-control" type="file" id="ImageProduct" accept="image/*">
+              </div>
+
+
+              <button type="button" class="btn btn-primary mb-5" onclick="addProduct()">Add Product</button>   <!-- TODO add product by making button type button -->
+
+
+            </form>
+
+
+          
+          </div>
+
+          <div class="row d-flex justify-content-center align-items-center  mb-5" id="ProductContainer">
+            
+            <h2 class="text-center white mb-4"> the product you added will show here  </h2>
+
+          </div>
+
+          <div class="git-link d-flex justify-content-center align-items-center mt-2 mb-5 ">
+            <span class="fs-4 ">explore the code at github <i class="fab fa-github"></i> </span>
+            <button class="btn btn-light ms-3"> <a href="https://github.com/maryam2001-ux/javascript_live_Project" target="_blank"  style="text-decoration: none; color: #3a2a6d;">code</a></button>
+          </div>
+
+        
+        </div>
+      </div>
+    </main>
+
+    <!-- ! scripts  -->
+
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/crud.js"></script>
+  </body>
+</html>
